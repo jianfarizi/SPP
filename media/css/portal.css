@@ -1,0 +1,34 @@
+/* Gaya untuk elemen dengan kelas .colr */
+.colr {
+    color: #0c6f09; /* Warna teks */
+}
+
+/* Gaya untuk elemen dengan kelas .box */
+.box {
+    padding: 20px; /* Padding di sekitar konten */
+    color: #0c6f09; /* Warna teks */
+    text-align: center; /* Penyelarasan teks tengah */
+    cursor: pointer; /* Cursor berubah menjadi pointer saat hover */
+    font-size: 20px; /* Ukuran font */
+    border-radius: 0; /* Tanpa radius border (border kotak) */
+    border: 3px solid rgba(0,0,0,.70); /* Border dengan warna hitam transparan */
+    margin-top: 10px; /* Margin atas */
+}
+
+/* Gaya saat elemen dengan kelas .box dihover */
+.box:hover {
+    color: #fff; /* Warna teks saat hover */
+    background-color: #0c6f09; /* Warna latar belakang saat hover */
+    border-color: #0c6f09; /* Warna border saat hover */
+    transition: 0.5s; /* Durasi transisi saat hover */
+}
+
+/* Gaya untuk elemen dengan kelas .icon-menu */
+.icon-menu {
+    font-size: 100px; /* Ukuran font besar untuk ikon menu */
+}
+
+/* Gaya untuk elemen <a> */
+a {
+    text-decoration: none !important; /* Menghapus garis bawah pada tautan */
+}

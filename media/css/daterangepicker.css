@@ -1,0 +1,334 @@
+/* Gaya untuk daterangepicker */
+.daterangepicker {
+  position: absolute; /* Posisi absolut untuk penempatan */
+  color: inherit; /* Warna teks mengikuti warna induk */
+  background-color: #fff; /* Warna latar belakang putih */
+  border-radius: 4px; /* Sudut melengkung dengan radius 4px */
+  width: 278px; /* Lebar elemen */
+  padding: 4px; /* Padding di semua sisi */
+  margin-top: 1px; /* Margin atas */
+  top: 100px; /* Jarak dari atas */
+  left: 20px; /* Jarak dari kiri */
+  /* Kalender */
+}
+
+/* Gaya untuk panah pada daterangepicker */
+.daterangepicker:before, .daterangepicker:after {
+  position: absolute; /* Posisi absolut */
+  display: inline-block; /* Menampilkan sebagai inline-block */
+  border-bottom-color: rgba(0, 0, 0, 0.2); /* Warna border bawah */
+  content: ''; /* Konten kosong */
+}
+
+/* Gaya untuk panah bawah daterangepicker */
+.daterangepicker:before {
+  top: -7px; /* Jarak dari atas */
+  border-right: 7px solid transparent; /* Border kanan transparan */
+  border-left: 7px solid transparent; /* Border kiri transparan */
+  border-bottom: 7px solid #ccc; /* Border bawah abu-abu */
+}
+
+/* Gaya untuk panah bawah daterangepicker bagian atas */
+.daterangepicker:after {
+  top: -6px; /* Jarak dari atas */
+  border-right: 6px solid transparent; /* Border kanan transparan */
+  border-bottom: 6px solid #fff; /* Border bawah putih */
+  border-left: 6px solid transparent; /* Border kiri transparan */
+}
+
+/* Gaya untuk daterangepicker yang terbuka ke kiri */
+.daterangepicker.opensleft:before {
+  right: 9px; /* Jarak dari kanan */
+}
+.daterangepicker.opensleft:after {
+  right: 10px; /* Jarak dari kanan */
+}
+
+/* Gaya untuk daterangepicker yang terbuka di tengah */
+.daterangepicker.openscenter:before {
+  left: 0; /* Jarak dari kiri */
+  right: 0; /* Jarak dari kanan */
+  width: 0; /* Lebar 0 */
+  margin-left: auto; /* Margin kiri otomatis */
+  margin-right: auto; /* Margin kanan otomatis */
+}
+.daterangepicker.openscenter:after {
+  left: 0; /* Jarak dari kiri */
+  right: 0; /* Jarak dari kanan */
+  width: 0; /* Lebar 0 */
+  margin-left: auto; /* Margin kiri otomatis */
+  margin-right: auto; /* Margin kanan otomatis */
+}
+
+/* Gaya untuk daterangepicker yang terbuka ke kanan */
+.daterangepicker.opensright:before {
+  left: 9px; /* Jarak dari kiri */
+}
+.daterangepicker.opensright:after {
+  left: 10px; /* Jarak dari kiri */
+}
+
+/* Gaya untuk daterangepicker yang muncul ke atas */
+.daterangepicker.dropup {
+  margin-top: -5px; /* Margin atas negatif */
+}
+.daterangepicker.dropup:before {
+  top: initial; /* Hapus jarak dari atas */
+  bottom: -7px; /* Jarak dari bawah */
+  border-bottom: initial; /* Hapus border bawah */
+  border-top: 7px solid #ccc; /* Border atas abu-abu */
+}
+.daterangepicker.dropup:after {
+  top: initial; /* Hapus jarak dari atas */
+  bottom: -6px; /* Jarak dari bawah */
+  border-bottom: initial; /* Hapus border bawah */
+  border-top: 6px solid #fff; /* Border atas putih */
+}
+
+/* Gaya untuk menu dropdown daterangepicker */
+.daterangepicker.dropdown-menu {
+  max-width: none; /* Hapus batasan lebar maksimum */
+  z-index: 3001; /* Z-index untuk memastikan berada di atas elemen lain */
+}
+
+/* Gaya untuk daterangepicker dalam mode single */
+.daterangepicker.single .ranges, .daterangepicker.single .calendar {
+  float: none; /* Hapus float */
+}
+.daterangepicker.show-calendar .calendar {
+  display: block; /* Tampilkan kalender */
+}
+.daterangepicker .calendar {
+  display: none; /* Sembunyikan kalender secara default */
+  max-width: 270px; /* Lebar maksimum kalender */
+  margin: 4px; /* Margin di semua sisi */
+}
+.daterangepicker .calendar.single .calendar-table {
+  border: none; /* Hapus border pada kalender tunggal */
+}
+.daterangepicker .calendar th, .daterangepicker .calendar td {
+  white-space: nowrap; /* Jangan membungkus teks */
+  text-align: center; /* Pusatkan teks */
+  min-width: 32px; /* Lebar minimum sel */
+}
+.daterangepicker .calendar-table {
+  border: 1px solid #fff; /* Border tabel kalender putih */
+  padding: 4px; /* Padding di semua sisi */
+  border-radius: 4px; /* Sudut melengkung dengan radius 4px */
+  background-color: #fff; /* Warna latar belakang putih */
+}
+.daterangepicker table {
+  width: 100%; /* Lebar tabel 100% */
+  margin: 0; /* Hapus margin */
+}
+.daterangepicker td, .daterangepicker th {
+  text-align: center; /* Pusatkan teks */
+  width: 20px; /* Lebar sel */
+  height: 20px; /* Tinggi sel */
+  border-radius: 4px; /* Sudut melengkung dengan radius 4px */
+  border: 1px solid transparent; /* Border transparan */
+  white-space: nowrap; /* Jangan membungkus teks */
+  cursor: pointer; /* Pointer cursor */
+}
+.daterangepicker td.available:hover, .daterangepicker th.available:hover {
+  background-color: #eee; /* Warna latar belakang saat hover */
+  border-color: transparent; /* Border transparan */
+  color: inherit; /* Warna teks mengikuti warna induk */
+}
+.daterangepicker td.week, .daterangepicker th.week {
+  font-size: 80%; /* Ukuran font 80% */
+  color: #ccc; /* Warna teks abu-abu */
+}
+.daterangepicker td.off, .daterangepicker td.off.in-range, .daterangepicker td.off.start-date, .daterangepicker td.off.end-date {
+  background-color: #fff; /* Warna latar belakang putih */
+  border-color: transparent; /* Border transparan */
+  color: #999; /* Warna teks abu-abu */
+}
+.daterangepicker td.in-range {
+  background-color: #ebf4f8; /* Warna latar belakang biru muda */
+  border-color: transparent; /* Border transparan */
+  color: #000; /* Warna teks hitam */
+  border-radius: 0; /* Hapus sudut melengkung */
+}
+.daterangepicker td.start-date {
+  border-radius: 4px 0 0 4px; /* Sudut melengkung di kiri atas dan kiri bawah */
+}
+.daterangepicker td.end-date {
+  border-radius: 0 4px 4px 0; /* Sudut melengkung di kanan atas dan kanan bawah */
+}
+.daterangepicker td.start-date.end-date {
+  border-radius: 4px; /* Sudut melengkung di semua sudut */
+}
+.daterangepicker td.active, .daterangepicker td.active:hover {
+  background-color: #357ebd; /* Warna latar belakang biru */
+  border-color: transparent; /* Border transparan */
+  color: #fff; /* Warna teks putih */
+}
+.daterangepicker th.month {
+  width: auto; /* Lebar otomatis */
+}
+.daterangepicker td.disabled, .daterangepicker option.disabled {
+  color: #999; /* Warna teks abu-abu */
+  cursor: not-allowed; /* Cursor tidak diizinkan */
+  text-decoration: line-through; /* Garis tengah teks */
+}
+.daterangepicker select.monthselect, .daterangepicker select.yearselect {
+  font-size: 12px; /* Ukuran font 12px */
+  padding: 1px; /* Padding 1px */
+  height: auto; /* Tinggi otomatis */
+  margin: 0; /* Hapus margin */
+  cursor: default; /* Cursor default */
+}
+.daterangepicker select.monthselect {
+  margin-right: 2%; /* Margin kanan 2% */
+  width: 56%; /* Lebar 56% */
+}
+.daterangepicker select.yearselect {
+  width: 40%; /* Lebar 40% */
+}
+.daterangepicker select.hourselect, .daterangepicker select.minuteselect, .daterangepicker select.secondselect, .daterangepicker select.ampmselect {
+  width: 50px; /* Lebar 50px */
+  margin-bottom: 0; /* Margin bawah 0 */
+}
+.daterangepicker .input-mini {
+  border: 1px solid #ccc; /* Border abu-abu */
+  border-radius: 4px; /* Sudut melengkung dengan radius 4px */
+  color: #555; /* Warna teks abu-abu gelap */
+  height: 30px; /* Tinggi 30px */
+  line-height: 30px; /* Jarak garis teks 30px */
+  display: block; /* Tampilkan sebagai blok */
+  vertical-align: middle; /* Rata tengah secara vertikal */
+  margin: 0 0 5px 0; /* Margin bawah 5px */
+  padding: 0 6px 0 28px; /* Padding kiri 28px dan kanan 6px */
+  width: 100%; /* Lebar 100% */
+}
+.daterangepicker .input-mini.active {
+  border: 1px solid #08c; /* Border biru */
+  border-radius: 4px; /* Sudut melengkung dengan radius 4px */
+}
+.daterangepicker .daterangepicker_input {
+  position: relative; /* Posisi relatif */
+}
+.daterangepicker .daterangepicker_input i {
+  position: absolute; /* Posisi absolut */
+  left: 8px; /* Jarak dari kiri */
+  top: 8px; /* Jarak dari atas */
+}
+.daterangepicker.rtl .input-mini {
+  padding-right: 28px; /* Padding kanan 28px */
+  padding-left: 6px; /* Padding kiri 6px */
+}
+.daterangepicker.rtl .daterangepicker_input i {
+  left: auto; /* Hapus jarak dari kiri */
+  right: 8px; /* Jarak dari kanan */
+}
+.daterangepicker .calendar-time {
+  text-align: center; /* Pusatkan teks */
+  margin: 5px auto; /* Margin atas dan bawah 5px, margin kiri dan kanan otomatis */
+  line-height: 30px; /* Jarak garis teks 30px */
+  position: relative; /* Posisi relatif */
+  padding-left: 28px; /* Padding kiri 28px */
+}
+.daterangepicker .calendar-time select.disabled {
+  color: #ccc; /* Warna teks abu-abu */
+  cursor: not-allowed; /* Cursor tidak diizinkan */
+}
+
+/* Gaya untuk layar yang lebih besar */
+@media (min-width: 564px) {
+  .daterangepicker {
+    width: auto; /* Lebar otomatis */
+  }
+  .daterangepicker .ranges ul {
+    width: 160px; /* Lebar 160px */
+  }
+  .daterangepicker.single .ranges ul {
+    width: 100%; /* Lebar 100% */
+  }
+  .daterangepicker.single .calendar.left {
+    clear: none; /* Hapus pembersihan */
+  }
+  .daterangepicker.single.ltr .ranges, .daterangepicker.single.ltr .calendar {
+    float: left; /* Float ke kiri */
+  }
+  .daterangepicker.single.rtl .ranges, .daterangepicker.single.rtl .calendar {
+    float: right; /* Float ke kanan */
+  }
+  .daterangepicker.ltr {
+    direction: ltr; /* Arah teks dari kiri ke kanan */
+    text-align: left; /* Rata kiri */
+  }
+  .daterangepicker.ltr .calendar.left {
+    clear: left; /* Pembersihan ke kiri */
+    margin-right: 0; /* Margin kanan 0 */
+  }
+  .daterangepicker.ltr .calendar.left .calendar-table {
+    border-right: none; /* Hapus border kanan */
+    border-top-right-radius: 0; /* Hapus sudut melengkung kanan atas */
+    border-bottom-right-radius: 0; /* Hapus sudut melengkung kanan bawah */
+  }
+  .daterangepicker.ltr .calendar.right {
+    margin-left: 0; /* Margin kiri 0 */
+  }
+  .daterangepicker.ltr .calendar.right .calendar-table {
+    border-left: none; /* Hapus border kiri */
+    border-top-left-radius: 0; /* Hapus sudut melengkung kiri atas */
+    border-bottom-left-radius: 0; /* Hapus sudut melengkung kiri bawah */
+  }
+  .daterangepicker.ltr .left .daterangepicker_input {
+    padding-right: 12px; /* Padding kanan 12px */
+  }
+  .daterangepicker.ltr .calendar.left .calendar-table {
+    padding-right: 12px; /* Padding kanan 12px */
+  }
+  .daterangepicker.ltr .ranges, .daterangepicker.ltr .calendar {
+    float: left; /* Float ke kiri */
+  }
+  .daterangepicker.rtl {
+    direction: rtl; /* Arah teks dari kanan ke kiri */
+    text-align: right; /* Rata kanan */
+  }
+  .daterangepicker.rtl .calendar.left {
+    clear: right; /* Pembersihan ke kanan */
+    margin-left: 0; /* Margin kiri 0 */
+  }
+  .daterangepicker.rtl .calendar.left .calendar-table {
+    border-left: none; /* Hapus border kiri */
+    border-top-left-radius: 0; /* Hapus sudut melengkung kiri atas */
+    border-bottom-left-radius: 0; /* Hapus sudut melengkung kiri bawah */
+  }
+  .daterangepicker.rtl .calendar.right {
+    margin-right: 0; /* Margin kanan 0 */
+  }
+  .daterangepicker.rtl .calendar.right .calendar-table {
+    border-right: none; /* Hapus border kanan */
+    border-top-right-radius: 0; /* Hapus sudut melengkung kanan atas */
+    border-bottom-right-radius: 0; /* Hapus sudut melengkung kanan bawah */
+  }
+  .daterangepicker.rtl .left .daterangepicker_input {
+    padding-left: 12px; /* Padding kiri 12px */
+  }
+  .daterangepicker.rtl .calendar.left .calendar-table {
+    padding-left: 12px; /* Padding kiri 12px */
+  }
+  .daterangepicker.rtl .ranges, .daterangepicker.rtl .calendar {
+    text-align: right; /* Rata kanan */
+    float: right; /* Float ke kanan */
+  }
+}
+
+/* Gaya untuk layar yang lebih besar dari 730px */
+@media (min-width: 730px) {
+  .daterangepicker .ranges {
+    width: auto; /* Lebar otomatis */
+  }
+  .daterangepicker.ltr .ranges {
+    float: left; /* Float ke kiri */
+  }
+  .daterangepicker.rtl .ranges {
+    float: right; /* Float ke kanan */
+  }
+  .daterangepicker .calendar.left {
+    clear: none !important; /* Hapus pembersihan dengan penting */
+  }
+}

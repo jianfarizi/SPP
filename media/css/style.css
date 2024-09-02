@@ -1,0 +1,158 @@
+/* Gaya untuk elemen dengan kelas .main-menu */
+.main-menu {
+  background-color: #265090 !important; /* Warna latar belakang biru gelap */
+  color: #fff !important; /* Warna teks putih */
+  text-align: center; /* Penyelarasan teks di tengah */
+}
+
+/* Gaya untuk elemen dengan kelas .dash-numb */
+.dash-numb {
+  font-size: 25pt !important; /* Ukuran font 25pt */
+  text-align: center !important; /* Penyelarasan teks di tengah */
+}
+
+/* Gaya untuk elemen dengan kelas .dash-text */
+.dash-text {
+  text-transform: capitalize !important; /* Mengubah setiap kata pertama menjadi huruf kapital */
+}
+
+/* Gaya untuk indikator carousel */
+.carousel-indicators .active {
+  background: #31708f; /* Warna latar belakang indikator aktif */
+}
+
+/* Gaya untuk penyesuaian carousel */
+.adjust1 {
+  float: left; /* Mengapungkan elemen ke kiri */
+  width: 95%; /* Lebar 95% dari elemen induk */
+  margin-bottom: 0; /* Margin bawah 0 */
+}
+
+.adjust2 {
+  margin: 0; /* Margin 0 */
+  padding-left: 35px; /* Padding kiri 35px */
+  text-align: justify; /* Penyelarasan teks justify */
+}
+
+/* Gaya untuk indikator carousel */
+.carousel-indicators li {
+  border: 1px solid #ccc; /* Border indikator carousel */
+}
+
+/* Gaya untuk kontrol carousel */
+.carousel-control {
+  color: #31708f; /* Warna teks kontrol */
+  width: 5%; /* Lebar kontrol 5% dari elemen induk */
+}
+
+.carousel-control:hover, .carousel-control:focus {
+  color: #31708f; /* Warna teks saat hover atau fokus */
+}
+
+.carousel-control.left, .carousel-control.right {
+  background-image: none; /* Menghapus gambar latar belakang pada kontrol kiri dan kanan */
+}
+
+/* Gaya untuk objek media dalam carousel */
+.media-object {
+  margin: auto; /* Margin otomatis */
+  margin-top: 15%; /* Margin atas 15% */
+}
+
+@media screen and (max-width: 768px) {
+  .media-object {
+      margin-top: 0; /* Menghapus margin atas pada layar kecil */
+  }
+}
+
+/* Gaya untuk elemen dengan kelas .ind */
+.ind {
+  bottom: -18px !important; /* Posisi bawah elemen */
+}
+
+/* Gaya untuk elemen dengan kelas .bott-bar */
+.bott-bar {
+  position: relative !important; /* Posisi relatif */
+  width: 100% !important; /* Lebar 100% dari elemen induk */
+  /*margin-bottom: 15px !important;*/ /* Margin bawah (komentar) */
+  /*min-height: 58px !important;*/ /* Tinggi minimum (komentar) */
+}
+
+/* Gaya untuk elemen dengan kelas .pos-bar */
+.pos-bar {
+  position: relative !important; /* Posisi relatif */
+}
+
+/* Gaya untuk elemen dengan kelas .content-bar */
+.content-bar {
+  /*padding: 5px 0;*/ /* Padding (komentar) */
+  width: 20%; /* Lebar 20% dari elemen induk */
+  float: left; /* Mengapungkan elemen ke kiri */
+  color: #000; /* Warna teks hitam */
+}
+
+/* Gaya untuk elemen dengan kelas .group-bot-bar */
+.group-bot-bar {
+  height: 48px; /* Tinggi 48px */
+  position: relative; /* Posisi relatif */
+  text-align: center; /* Penyelarasan teks di tengah */
+  padding-top: 5px; /* Padding atas 5px */
+}
+
+/* Gaya saat elemen dengan kelas .content-bar dihover */
+.content-bar:hover {
+  color: #20A8D8; /* Warna teks saat hover */
+}
+
+/* Gaya untuk elemen dengan kelas .content-bar yang aktif */
+.content-bar.active {
+  color: #20A8D8; /* Warna teks untuk elemen aktif */
+}
+
+/* Gaya untuk elemen dengan kelas .icon-bot-bar */
+.icon-bot-bar {
+  font-size: 30px; /* Ukuran font 30px */
+  text-align: center; /* Penyelarasan teks di tengah */
+  position: relative; /* Posisi relatif */
+}
+
+/* Gaya untuk elemen dengan kelas .text-bot-bar */
+.text-bot-bar {
+  margin-top: -5px; /* Margin atas -5px */
+  font-size: 11px; /* Ukuran font 11px */
+  text-align: center; /* Penyelarasan teks di tengah */
+}
+
+/* Gaya untuk elemen dengan kelas .Table */
+.Table {
+  display: table; /* Menampilkan elemen sebagai tabel */
+}
+
+/* Gaya untuk elemen dengan kelas .Title */
+.Title {
+  display: table-caption; /* Menampilkan elemen sebagai caption tabel */
+  text-align: center; /* Penyelarasan teks di tengah */
+  font-weight: bold; /* Berat font bold */
+  font-size: larger; /* Ukuran font lebih besar */
+}
+
+/* Gaya untuk elemen dengan kelas .Heading */
+.Heading {
+  display: table-row; /* Menampilkan elemen sebagai baris tabel */
+  font-weight: bold; /* Berat font bold */
+  text-align: center; /* Penyelarasan teks di tengah */
+}
+
+/* Gaya untuk elemen dengan kelas .Row */
+.Row {
+  display: table-row; /* Menampilkan elemen sebagai baris tabel */
+}
+
+/* Gaya untuk elemen dengan kelas .Cell */
+.Cell {
+  display: table-cell; /* Menampilkan elemen sebagai sel tabel */
+  border: solid; /* Border solid */
+  border-width: thin; /* Ketebalan border tipis */
+  padding-left: 5px; /* Padding kiri 5px */
+  padding-right: 5px; /* Padding kanan 5px */
+}

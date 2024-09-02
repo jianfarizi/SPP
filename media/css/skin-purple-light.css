@@ -1,0 +1,207 @@
+/*
+ * Skin: Purple
+ * ------------
+ */
+
+/* Gaya untuk navbar di header utama dengan tema purple-light */
+.skin-purple-light .main-header .navbar {
+  background-color: #265090; /* Warna latar belakang navbar */
+}
+
+/* Gaya untuk tautan di dalam navbar */
+.skin-purple-light .main-header .navbar .nav > li > a {
+  color: #ffffff; /* Warna teks tautan */
+}
+
+/* Gaya untuk tautan di navbar saat hover, aktif, atau fokus */
+.skin-purple-light .main-header .navbar .nav > li > a:hover,
+.skin-purple-light .main-header .navbar .nav > li > a:active,
+.skin-purple-light .main-header .navbar .nav > li > a:focus,
+.skin-purple-light .main-header .navbar .nav .open > a,
+.skin-purple-light .main-header .navbar .nav .open > a:hover,
+.skin-purple-light .main-header .navbar .nav .open > a:focus,
+.skin-purple-light .main-header .navbar .nav > .active > a {
+  background: rgba(0, 0, 0, 0.1); /* Warna latar belakang saat hover, aktif, atau fokus */
+  color: #f6f6f6; /* Warna teks saat hover, aktif, atau fokus */
+}
+
+/* Gaya untuk tombol toggle sidebar */
+.skin-purple-light .main-header .navbar .sidebar-toggle {
+  color: #ffffff; /* Warna teks tombol toggle */
+}
+
+/* Gaya untuk tombol toggle sidebar saat hover */
+.skin-purple-light .main-header .navbar .sidebar-toggle:hover {
+  color: #f6f6f6; /* Warna teks saat hover */
+  background: rgba(0, 0, 0, 0.1); /* Warna latar belakang saat hover */
+}
+
+/* Gaya untuk tombol toggle sidebar dengan latar belakang hijau */
+.skin-purple-light .main-header .navbar .sidebar-toggle {
+  color: #fff; /* Warna teks tombol toggle */
+}
+
+.skin-purple-light .main-header .navbar .sidebar-toggle:hover {
+  background-color: #2ABB9B; /* Warna latar belakang saat hover */
+}
+
+/* Gaya untuk logo di header utama */
+.skin-purple-light .main-header .logo {
+  background-color: #2ABB9B; /* Warna latar belakang logo */
+  color: #ffffff; /* Warna teks logo */
+  border-bottom: 0 solid transparent; /* Border bawah transparan */
+}
+
+/* Gaya untuk logo saat hover */
+.skin-purple-light .main-header .logo:hover {
+  background-color: #fff; /* Warna latar belakang saat hover */
+  color: #2ABB9B; /* Warna teks saat hover */
+}
+
+/* Gaya untuk header pengguna di sidebar */
+.skin-purple-light .main-header li.user-header {
+  background-color: #2ABB9B; /* Warna latar belakang header pengguna */
+}
+
+/* Gaya untuk header konten */
+.skin-purple-light .content-header {
+  background: transparent; /* Latar belakang transparan */
+}
+
+/* Gaya untuk wrapper, sidebar utama, dan sisi kiri */
+.skin-purple-light .wrapper,
+.skin-purple-light .main-sidebar,
+.skin-purple-light .left-side {
+  background-color: #f9fafc; /* Warna latar belakang wrapper, sidebar utama, dan sisi kiri */
+}
+
+/* Gaya untuk border kanan sidebar utama */
+.skin-purple-light .main-sidebar {
+  border-right: 1px solid #d2d6de; /* Border kanan sidebar utama */
+}
+
+/* Gaya untuk panel pengguna di sidebar */
+.skin-purple-light .user-panel > .info,
+.skin-purple-light .user-panel > .info > a {
+  color: #444444; /* Warna teks di panel pengguna */
+}
+
+/* Gaya untuk item menu di sidebar */
+.skin-purple-light .sidebar-menu > li {
+  -webkit-transition: border-left-color 0.3s ease;
+  -o-transition: border-left-color 0.3s ease;
+  transition: border-left-color 0.3s ease; /* Transisi warna border kiri */
+}
+
+/* Gaya untuk header di sidebar menu */
+.skin-purple-light .sidebar-menu > li.header {
+  color: #848484; /* Warna teks header */
+  background: #f9fafc; /* Warna latar belakang header */
+}
+
+/* Gaya untuk tautan di dalam sidebar menu */
+.skin-purple-light .sidebar-menu > li > a {
+  border-left: 3px solid transparent; /* Border kiri transparan */
+  font-weight: 600; /* Berat font bold */
+}
+
+/* Gaya untuk tautan di sidebar menu saat hover atau aktif */
+.skin-purple-light .sidebar-menu > li:hover > a,
+.skin-purple-light .sidebar-menu > li.active > a {
+  color: #000000; /* Warna teks saat hover atau aktif */
+  background: #f4f4f5; /* Warna latar belakang saat hover atau aktif */
+}
+
+/* Gaya untuk item menu sidebar yang aktif */
+.skin-purple-light .sidebar-menu > li.active {
+  border-left-color: #2ABB9B; /* Warna border kiri untuk item aktif */
+}
+
+/* Gaya untuk tautan di item menu sidebar yang aktif */
+.skin-purple-light .sidebar-menu > li.active > a {
+  font-weight: 600; /* Berat font bold untuk item aktif */
+}
+
+/* Gaya untuk submenu di sidebar menu */
+.skin-purple-light .sidebar-menu > li > .treeview-menu {
+  background: #f4f4f5; /* Warna latar belakang submenu */
+}
+
+/* Gaya untuk tautan di sidebar */
+.skin-purple-light .sidebar a {
+  color: #444444; /* Warna teks tautan di sidebar */
+}
+
+/* Gaya untuk tautan di sidebar saat hover */
+.skin-purple-light .sidebar a:hover {
+  text-decoration: none; /* Menghapus garis bawah saat hover */
+}
+
+/* Gaya untuk tautan di submenu di sidebar menu */
+.skin-purple-light .sidebar-menu .treeview-menu > li > a {
+  color: #777777; /* Warna teks tautan di submenu */
+}
+
+/* Gaya untuk tautan di submenu yang aktif atau saat hover */
+.skin-purple-light .sidebar-menu .treeview-menu > li.active > a,
+.skin-purple-light .sidebar-menu .treeview-menu > li > a:hover {
+  color: #000000; /* Warna teks untuk tautan aktif atau saat hover */
+}
+
+/* Gaya untuk tautan di submenu yang aktif */
+.skin-purple-light .sidebar-menu .treeview-menu > li.active > a {
+  font-weight: 600; /* Berat font bold untuk tautan aktif */
+}
+
+/* Gaya untuk formulir di sidebar */
+.skin-purple-light .sidebar-form {
+  border-radius: 3px; /* Radius border untuk sudut formulir */
+  border: 1px solid #d2d6de; /* Border formulir */
+  margin: 10px 10px; /* Margin formulir */
+}
+
+/* Gaya untuk input teks dan tombol di formulir sidebar */
+.skin-purple-light .sidebar-form input[type="text"],
+.skin-purple-light .sidebar-form .btn {
+  box-shadow: none; /* Menghapus bayangan */
+  background-color: #fff; /* Warna latar belakang putih */
+  border: 1px solid transparent; /* Border transparan */
+  height: 35px; /* Tinggi input dan tombol */
+}
+
+/* Gaya untuk input teks di formulir sidebar */
+.skin-purple-light .sidebar-form input[type="text"] {
+  color: #666; /* Warna teks input */
+  border-top-left-radius: 2px; /* Radius border kiri atas */
+  border-top-right-radius: 0; /* Radius border kanan atas */
+  border-bottom-right-radius: 0; /* Radius border kanan bawah */
+  border-bottom-left-radius: 2px; /* Radius border kiri bawah */
+}
+
+/* Gaya untuk input teks saat fokus */
+.skin-purple-light .sidebar-form input[type="text"]:focus,
+.skin-purple-light .sidebar-form input[type="text"]:focus + .input-group-btn .btn {
+  background-color: #fff; /* Warna latar belakang saat fokus */
+  color: #666; /* Warna teks saat fokus */
+}
+
+/* Gaya untuk tombol di formulir sidebar saat input teks fokus */
+.skin-purple-light .sidebar-form input[type="text"]:focus + .input-group-btn .btn {
+  border-left-color: #fff; /* Warna border kiri tombol saat input teks fokus */
+}
+
+/* Gaya untuk tombol di formulir sidebar */
+.skin-purple-light .sidebar-form .btn {
+  color: #999; /* Warna teks tombol */
+  border-top-left-radius: 0; /* Radius border kiri atas tombol */
+  border-top-right-radius: 2px; /* Radius border kanan atas tombol */
+  border-bottom-right-radius: 2px; /* Radius border kanan bawah tombol */
+  border-bottom-left-radius: 0; /* Radius border kiri bawah tombol */
+}
+
+/* Gaya untuk menu di sidebar saat layar lebih besar dari 768px */
+@media (min-width: 768px) {
+  .skin-purple-light.sidebar-mini.sidebar-collapse .sidebar-menu > li > .treeview-menu {
+    border-left: 1px solid #d2d6de; /* Border kiri untuk menu treeview */
+  }
+}

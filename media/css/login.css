@@ -1,0 +1,113 @@
+/*//////////////////////////////////////////////////////////////////
+[ FONT ]*/
+
+/* Menentukan font Poppins-Regular */
+@font-face {
+    font-family: Poppins-Regular;
+    src: url('../fonts/Poppins-Regular.ttf'); 
+  }
+  
+  /* Menentukan font Poppins-Medium */
+  @font-face {
+    font-family: Poppins-Medium;
+    src: url('../fonts/Poppins-Medium.ttf'); 
+  }
+  
+  /* Menentukan font Poppins-Bold */
+  @font-face {
+    font-family: Poppins-Bold;
+    src: url('../fonts/Poppins-Bold.ttf'); 
+  }
+  
+  /* Menentukan font Poppins-SemiBold */
+  @font-face {
+    font-family: Poppins-SemiBold;
+    src: url('../fonts/Poppins-SemiBold.ttf'); 
+  }
+  
+  /*//////////////////////////////////////////////////////////////////
+  [ RESTYLE TAG ]*/
+  
+  /* Menghapus margin dan padding default, dan mengatur box-sizing */
+  * {
+      margin: 0px; 
+      padding: 0px; 
+      box-sizing: border-box;
+  }
+  
+  /* Menetapkan font default dan mengatur overflow untuk body dan html */
+  body, html {
+      font-family: Poppins-Regular, sans-serif; /* Font default */
+      overflow-x: hidden; /* Menghapus scroll horizontal */
+      overflow-y: hidden; /* Menghapus scroll vertikal */
+      max-width: 100%; /* Membatasi lebar maksimum */
+      max-height: 100%; /* Membatasi tinggi maksimum */
+  }
+  
+  /* Gaya untuk elemen dengan kelas .box */
+  .box {
+      background-color: #87CEFA; /* Warna latar belakang */
+      top: 0; /* Posisi atas */
+      left: 0; /* Posisi kiri */
+      min-height: 650px; /* Tinggi minimum */
+      height: 100%; /* Tinggi 100% */
+      overflow: hidden; /* Menghapus overflow */
+      padding: 250px 60px 60px; /* Padding */
+      border-top-left-radius: -10%; /* Radius border atas kiri */
+      color: #efdbdb; /* Warna teks */
+  }
+  
+  /* Gaya untuk elemen dengan kelas .logo */
+  .logo {
+      margin-top: 200px; /* Margin atas */
+      margin-right: 200px; /* Margin kanan */
+      margin-left: 200px; /* Margin kiri */
+  }
+  
+  /* Gaya untuk tombol login */
+  .btn-login {
+      border-radius: 0px; /* Tanpa radius border */
+      background-color: #fff; /* Warna latar belakang tombol */
+      border-color: #fff; /* Warna border tombol */
+      color: #265090; /* Warna teks tombol */
+      width: 100px; /* Lebar tombol */
+  }
+  
+  /* Gaya untuk tombol login saat dihover */
+  .btn-login:hover {
+      background-color: #3c763d; /* Warna latar belakang saat hover */
+      border-color: #fff; /* Warna border saat hover */
+      color: #fff; /* Warna teks saat hover */
+      transition: 0.5s; /* Durasi transisi hover */
+  }
+  
+  /* Gaya untuk elemen dengan kelas .flat */
+  .flat {
+      border-radius: 0px; /* Tanpa radius border */
+      height: 40px; /* Tinggi elemen */
+  }
+  
+  /* Gaya untuk elemen dengan kelas .merk */
+  .merk {
+      margin-top: 10px; /* Margin atas */
+      text-align: center; /* Penyelarasan teks tengah */
+      font-size: 15pt; /* Ukuran font */
+      font-weight: bold; /* Berat font tebal */
+  }
+  
+  /* Gaya untuk elemen dengan kelas .school */
+  .school {
+      margin-top: -10px; /* Margin atas negatif */
+      text-align: center; /* Penyelarasan teks tengah */
+      font-size: 12pt; /* Ukuran font */
+      font-weight: bold; /* Berat font tebal */
+  }
+  
+  /* Gaya untuk elemen dengan kelas .title-login */
+  .title-login {
+      text-align: center; /* Penyelarasan teks tengah */
+      font-size: 25pt; /* Ukuran font */
+      margin-top: -100px; /* Margin atas negatif */
+      margin-bottom: 50px; /* Margin bawah */
+  }
+  

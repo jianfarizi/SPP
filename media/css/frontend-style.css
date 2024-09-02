@@ -1,0 +1,409 @@
+/* Gaya untuk elemen dengan kelas .backg */
+.backg {
+  background-color: #265090 !important; /* Warna latar belakang */
+}
+
+/* Gaya untuk elemen body dan html */
+body,
+html {
+  width: 100%; /* Lebar 100% */
+  height: 100%; /* Tinggi 100% */
+}
+
+/* Gaya untuk body */
+body {
+  font-family: 'Source Sans Pro'; /* Font default */
+}
+
+/* Gaya untuk tombol besar */
+.btn-xl {
+  padding: 1.25rem 2.5rem; /* Padding untuk tombol */
+}
+
+/* Gaya untuk section konten */
+.content-section {
+  padding-top: 4rem; /* Padding atas */
+  padding-bottom: 7.5rem; /* Padding bawah */
+}
+
+/* Gaya untuk heading di section konten */
+.content-section-heading h2 {
+  font-size: 3rem; /* Ukuran font */
+}
+
+/* Gaya untuk sub-heading di section konten */
+.content-section-heading h3 {
+  font-size: 1rem; /* Ukuran font */
+  text-transform: uppercase; /* Huruf kapital */
+}
+
+/* Gaya umum untuk semua heading */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700; /* Berat font bold */
+}
+
+/* Gaya untuk teks pudar */
+.text-faded {
+  color: rgba(255, 255, 255, 0.7); /* Warna teks dengan transparansi */
+}
+
+/* Gaya untuk peta */
+.map {
+  height: 30rem; /* Tinggi peta */
+}
+
+@media (max-width: 992px) {
+  /* Gaya untuk peta saat layar lebih kecil dari 992px */
+  .map {
+    height: 75%; /* Tinggi peta pada layar kecil */
+  }
+}
+
+.map iframe {
+  pointer-events: none; /* Nonaktifkan interaksi pointer */
+}
+
+/* Gaya untuk tombol scroll-to-top */
+.scroll-to-top {
+  position: fixed; /* Posisi tetap */
+  right: 15px; /* Jarak dari kanan */
+  bottom: 15px; /* Jarak dari bawah */
+  display: none; /* Tidak ditampilkan secara default */
+  width: 50px; /* Lebar tombol */
+  height: 50px; /* Tinggi tombol */
+  text-align: center; /* Penjajaran teks di tengah */
+  color: white; /* Warna teks */
+  background: rgba(52, 58, 64, 0.5); /* Warna latar belakang dengan transparansi */
+  line-height: 45px; /* Jarak garis teks */
+}
+
+/* Gaya untuk tombol scroll-to-top saat fokus atau hover */
+.scroll-to-top:focus, .scroll-to-top:hover {
+  color: white; /* Warna teks saat fokus atau hover */
+}
+
+.scroll-to-top:hover {
+  background: #343a40; /* Warna latar belakang saat hover */
+}
+
+.scroll-to-top i {
+  font-weight: 800; /* Berat font untuk ikon */
+}
+
+/* Gaya untuk masthead */
+.masthead {
+  min-height: 30rem; /* Tinggi minimum */
+  position: relative; /* Posisi relatif */
+  display: table; /* Tampilkan sebagai tabel */
+  width: 100%; /* Lebar 100% */
+  height: auto; /* Tinggi otomatis */
+  padding-top: 8rem; /* Padding atas */
+  padding-bottom: 8rem; /* Padding bawah */
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../img/bg-masthead.jpg"); /* Latar belakang gradient dan gambar */
+  background-position: center center; /* Posisi latar belakang di tengah */
+  background-repeat: no-repeat; /* Tidak mengulang latar belakang */
+  background-size: cover; /* Ukuran latar belakang menutupi elemen */
+}
+
+.masthead h1 {
+  font-size: 4rem; /* Ukuran font untuk h1 */
+  margin: 0; /* Menghapus margin */
+  padding: 0; /* Menghapus padding */
+}
+
+@media (min-width: 992px) {
+  /* Gaya untuk masthead pada layar lebih besar dari 992px */
+  .masthead {
+    height: 100vh; /* Tinggi 100% dari viewport */
+  }
+  .masthead h1 {
+    font-size: 5.5rem; /* Ukuran font untuk h1 */
+  }
+}
+
+/* Gaya untuk menu samping (sidebar) */
+#sidebar-wrapper {
+  position: fixed; /* Posisi tetap */
+  z-index: 2; /* Z-index untuk lapisan */
+  right: 0; /* Jarak dari kanan */
+  width: 250px; /* Lebar sidebar */
+  height: 100%; /* Tinggi 100% */
+  -webkit-transition: all 0.4s ease 0s; /* Transisi untuk Webkit */
+  -moz-transition: all 0.4s ease 0s; /* Transisi untuk Mozilla */
+  -ms-transition: all 0.4s ease 0s; /* Transisi untuk Microsoft */
+  -o-transition: all 0.4s ease 0s; /* Transisi untuk Opera */
+  transition: all 0.4s ease 0s; /* Transisi umum */
+  transform: translateX(250px); /* Geser sidebar ke kanan */
+  background: #1D809F; /* Warna latar belakang */
+  border-left: 1px solid rgba(255, 255, 255, 0.1); /* Border kiri dengan transparansi */
+}
+
+.sidebar-nav {
+  position: absolute; /* Posisi absolut */
+  top: 0; /* Jarak dari atas */
+  width: 250px; /* Lebar sidebar */
+  margin: 0; /* Margin nol */
+  padding: 0; /* Padding nol */
+  list-style: none; /* Menghapus penanda daftar */
+}
+
+.sidebar-nav li.sidebar-nav-item a {
+  display: block; /* Tampilkan sebagai blok */
+  text-decoration: none; /* Menghapus dekorasi teks */
+  color: #fff; /* Warna teks */
+  padding: 15px; /* Padding di dalam tautan */
+}
+
+.sidebar-nav li a:hover {
+  text-decoration: none; /* Menghapus dekorasi teks saat hover */
+  color: #fff; /* Warna teks saat hover */
+  background: rgba(255, 255, 255, 0.2); /* Warna latar belakang saat hover dengan transparansi */
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+  text-decoration: none; /* Menghapus dekorasi teks saat aktif atau fokus */
+}
+
+/* Gaya untuk brand di sidebar */
+.sidebar-nav > .sidebar-brand {
+  font-size: 1.2rem; /* Ukuran font */
+  background: rgba(52, 58, 64, 0.1); /* Warna latar belakang dengan transparansi */
+  height: 80px; /* Tinggi brand */
+  line-height: 50px; /* Jarak garis teks */
+  padding-top: 15px; /* Padding atas */
+  padding-bottom: 15px; /* Padding bawah */
+  padding-left: 15px; /* Padding kiri */
+}
+
+.sidebar-nav > .sidebar-brand a {
+  color: #fff; /* Warna teks */
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+  color: #fff; /* Warna teks saat hover */
+  background: none; /* Menghapus latar belakang saat hover */
+}
+
+#sidebar-wrapper.active {
+  right: 250px; /* Jarak dari kanan saat sidebar aktif */
+  width: 250px; /* Lebar sidebar */
+  -webkit-transition: all 0.4s ease 0s; /* Transisi untuk Webkit */
+  -moz-transition: all 0.4s ease 0s; /* Transisi untuk Mozilla */
+  -ms-transition: all 0.4s ease 0s; /* Transisi untuk Microsoft */
+  -o-transition: all 0.4s ease 0s; /* Transisi untuk Opera */
+  transition: all 0.4s ease 0s; /* Transisi umum */
+}
+
+/* Gaya untuk tombol toggle menu */
+.menu-toggle {
+  position: fixed; /* Posisi tetap */
+  right: 15px; /* Jarak dari kanan */
+  top: 15px; /* Jarak dari atas */
+  width: 50px; /* Lebar tombol */
+  height: 50px; /* Tinggi tombol */
+  text-align: center; /* Penjajaran teks di tengah */
+  color: #fff; /* Warna teks */
+  background: rgba(52, 58, 64, 0.5); /* Warna latar belakang dengan transparansi */
+  line-height: 50px; /* Jarak garis teks */
+  z-index: 999; /* Z-index untuk lapisan atas */
+}
+
+.menu-toggle:focus, .menu-toggle:hover {
+  color: #fff; /* Warna teks saat fokus atau hover */
+}
+
+.menu-toggle:hover {
+  background: #343a40; /* Warna latar belakang saat hover */
+}
+
+/* Gaya untuk ikon layanan */
+.service-icon {
+  background-color: #fff; /* Warna latar belakang */
+  color: #1D809F; /* Warna teks */
+  height: 7rem; /* Tinggi ikon */
+  width: 7rem; /* Lebar ikon */
+  display: block; /* Tampilkan sebagai blok */
+  line-height: 7.5rem; /* Jarak garis teks */
+  font-size: 2.25rem; /* Ukuran font */
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1); /* Bayangan kotak */
+}
+
+/* Gaya untuk callout */
+.callout {
+  padding: 15rem 0; /* Padding atas dan bawah */
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../img/bg-callout.jpg"); /* Latar belakang gradient dan gambar */
+  background-position: center center; /* Posisi latar belakang di tengah */
+  background-repeat: no-repeat; /* Tidak mengulang latar belakang */
+  background-size: cover; /* Ukuran latar belakang menutupi elemen */
+}
+
+.callout h2 {
+  font-size: 3.5rem; /* Ukuran font untuk h2 */
+  font-weight: 700; /* Berat font bold */
+  display: block; /* Tampilkan sebagai blok */
+  max-width: 30rem; /* Lebar maksimum */
+}
+
+/* Gaya untuk item portofolio */
+.portfolio-item {
+  display: block; /* Tampilkan sebagai blok */
+  position: relative; /* Posisi relatif */
+  overflow: hidden; /* Menyembunyikan konten yang meluber */
+  max-width: 530px; /* Lebar maksimum */
+  margin: auto auto 1rem; /* Margin otomatis */
+}
+
+/* Gaya untuk caption di item portofolio */
+.portfolio-item .caption {
+  display: flex; /* Menampilkan sebagai flex */
+  height: 100%; /* Tinggi 100% */
+  width: 100%; /* Lebar 100% */
+  background-color: rgba(33, 37, 41, 0.2); /* Warna latar belakang dengan transparansi */
+  position: absolute; /* Posisi absolut */
+  top: 0; /* Jarak dari atas */
+  bottom: 0; /* Jarak dari bawah */
+  z-index: 1; /* Z-index untuk lapisan atas */
+}
+
+/* Gaya untuk konten caption di item portofolio */
+.portfolio-item .caption .caption-content {
+  color: #fff; /* Warna teks */
+  margin: auto 2rem 2rem; /* Margin otomatis dan kiri-kanan */
+}
+
+/* Gaya untuk judul dalam caption di item portofolio */
+.portfolio-item .caption .caption-content h2 {
+  font-size: 0.8rem; /* Ukuran font untuk h2 */
+  text-transform: uppercase; /* Huruf kapital */
+}
+
+/* Gaya untuk paragraf dalam caption di item portofolio */
+.portfolio-item .caption .caption-content p {
+  font-weight: 300; /* Berat font ringan */
+  font-size: 1.2rem; /* Ukuran font */
+}
+
+@media (min-width: 992px) {
+  /* Gaya untuk item portofolio pada layar lebih besar dari 992px */
+  .portfolio-item {
+    max-width: none; /* Hapus batasan lebar maksimum */
+    margin: 0; /* Hapus margin */
+  }
+  .portfolio-item .caption {
+    -webkit-transition: -webkit-clip-path 0.25s ease-out, background-color 0.7s; /* Transisi untuk Webkit */
+    -webkit-clip-path: inset(0px); /* Clip path untuk Webkit */
+    clip-path: inset(0px); /* Clip path */
+  }
+  .portfolio-item .caption .caption-content {
+    transition: opacity 0.25s; /* Transisi untuk opacity */
+    margin-left: 5rem; /* Margin kiri */
+    margin-right: 5rem; /* Margin kanan */
+    margin-bottom: 5rem; /* Margin bawah */
+  }
+  .portfolio-item img {
+    -webkit-transition: -webkit-clip-path 0.25s ease-out; /* Transisi untuk Webkit */
+    -webkit-clip-path: inset(-1px); /* Clip path untuk Webkit */
+    clip-path: inset(-1px); /* Clip path */
+  }
+  .portfolio-item:hover img {
+    -webkit-clip-path: inset(2rem); /* Clip path saat hover untuk Webkit */
+    clip-path: inset(2rem); /* Clip path saat hover */
+  }
+  .portfolio-item:hover .caption {
+    background-color: rgba(29, 128, 159, 0.9); /* Warna latar belakang saat hover */
+    -webkit-clip-path: inset(2rem); /* Clip path saat hover untuk Webkit */
+    clip-path: inset(2rem); /* Clip path saat hover */
+  }
+}
+
+/* Gaya untuk footer */
+footer.footer {
+  padding-top: 5rem; /* Padding atas */
+  padding-bottom: 5rem; /* Padding bawah */
+}
+
+/* Gaya untuk tautan sosial di footer */
+footer.footer .social-link {
+  display: block; /* Tampilkan sebagai blok */
+  height: 4rem; /* Tinggi tautan sosial */
+  width: 4rem; /* Lebar tautan sosial */
+  line-height: 4.3rem; /* Jarak garis teks */
+  font-size: 1.5rem; /* Ukuran font */
+  background-color: #1D809F; /* Warna latar belakang */
+  transition: background-color 0.15s ease-in-out; /* Transisi warna latar belakang */
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1); /* Bayangan kotak */
+}
+
+/* Gaya untuk tautan sosial saat hover */
+footer.footer .social-link:hover {
+  background-color: #155d74; /* Warna latar belakang saat hover */
+  text-decoration: none; /* Menghapus dekorasi teks saat hover */
+}
+
+/* Gaya untuk tautan */
+a {
+  color: #1D809F; /* Warna teks tautan */
+}
+
+/* Gaya untuk tautan saat hover, fokus, atau aktif */
+a:hover, a:focus, a:active {
+  color: #155d74; /* Warna teks saat hover, fokus, atau aktif */
+}
+
+/* Gaya untuk tombol primer */
+.btn-primary {
+  background-color: #1D809F !important; /* Warna latar belakang */
+  border-color: #1D809F !important; /* Warna border */
+  color: #fff !important; /* Warna teks */
+}
+
+/* Gaya untuk tombol primer saat hover, fokus, atau aktif */
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+  background-color: #155d74 !important; /* Warna latar belakang saat hover, fokus, atau aktif */
+  border-color: #155d74 !important; /* Warna border saat hover, fokus, atau aktif */
+}
+
+/* Gaya untuk tombol sekunder */
+.btn-secondary {
+  background-color: #ecb807 !important; /* Warna latar belakang */
+  border-color: #ecb807 !important; /* Warna border */
+  color: #fff !important; /* Warna teks */
+}
+
+/* Gaya untuk tombol sekunder saat hover, fokus, atau aktif */
+.btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active {
+  background-color: #ba9106 !important; /* Warna latar belakang saat hover, fokus, atau aktif */
+  border-color: #ba9106 !important; /* Warna border saat hover, fokus, atau aktif */
+}
+
+/* Gaya untuk tombol gelap */
+.btn-dark {
+  color: #fff !important; /* Warna teks */
+}
+
+/* Gaya umum untuk tombol */
+.btn {
+  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.1); /* Bayangan kotak */
+  font-weight: 700; /* Berat font bold */
+}
+
+/* Gaya untuk latar belakang dengan kelas bg-primary */
+.bg-primary {
+  background-color: #1D809F !important; /* Warna latar belakang */
+}
+
+/* Gaya untuk teks dengan kelas text-primary */
+.text-primary {
+  color: #1D809F !important; /* Warna teks */
+}
+
+/* Gaya untuk teks dengan kelas text-secondary */
+.text-secondary {
+  color: #ecb807 !important; /* Warna teks */
+}
